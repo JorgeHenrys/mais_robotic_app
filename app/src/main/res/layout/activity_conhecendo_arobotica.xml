@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConhecendoARobotica">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:scaleY="2"
+        style="@style/CustomProgressBar"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="65"/>
+
+    <RelativeLayout
+        android:background="@drawable/bgblue"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textLevel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="Assunto Exemplo"
+            android:textSize="22sp" />
+
+
+        <RelativeLayout
+            android:background="@drawable/bgorange"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="400dp">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/assunto01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:lineSpacingExtra="6dp"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Aqui nesta áera tratamos do assunto abordado no tema"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/next" />
+
+
+
+
+            <Button
+                android:id="@+id/conhecendo_a_robotica_quiz"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

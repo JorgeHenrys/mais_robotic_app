@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:noHistory="true"
+    tools:context=".ConhecendoRoboticaQuiz">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:scaleY="2"
+        style="@style/CustomProgressBar"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="100"/>
+
+    <RelativeLayout
+        android:background="@drawable/bgblue"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textLevel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:text="Pergunta Exemplo"
+            android:textSize="22sp" />
+
+
+        <RelativeLayout
+            android:background="@drawable/bgorange"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="400dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:id="@+id/alternative_a"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="20sp"
+                    android:text="Alternativa A"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/custom_buttom"
+                    android:textAllCaps="false">
+
+
+                </Button>
+
+                <Button
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:id="@+id/alternative_b"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="20sp"
+                    android:text="Alternativa B"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/custom_buttom"
+                    android:textAllCaps="false">
+
+
+                </Button>
+
+                <Button
+                    android:fontFamily="@font/fredoka_one_regular"
+                    android:id="@+id/alternative_c"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="20sp"
+                    android:text="Alternativa C"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/custom_buttom"
+                    android:textAllCaps="false">
+
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:src="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+
+            <Button
+                android:id="@+id/questao_anterior"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/next" />
+
+
+
+
+            <Button
+                android:id="@+id/proxima_questao"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
