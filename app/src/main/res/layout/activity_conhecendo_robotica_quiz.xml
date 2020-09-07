@@ -13,7 +13,7 @@
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:scaleY="2"
@@ -21,213 +21,162 @@
         android:id="@+id/progress"
         android:layout_gravity="center"
         android:max="100"
-        android:progress="100"/>
+        android:progress="60"/>
 
     <RelativeLayout
-        android:background="@drawable/bgblue"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_width="350dp"
-        android:layout_height="400dp">
-
-        <TextView
-            android:textAlignment="center"
-            android:id="@+id/textLevel1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textColor="@android:color/white"
-            android:fontFamily="@font/fredoka_one_regular"
-            android:text="Pergunta Exemplo"
-            android:textSize="22sp" />
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
 
 
         <RelativeLayout
             android:background="@drawable/bgorange"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
             android:orientation="vertical"
-            android:layout_gravity="center"
             android:layout_width="350dp"
-            android:layout_height="400dp">
+            android:layout_height="300dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <TextView
+                android:id="@+id/textPergunta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="vertical"
-                >
-
-                <Button
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:id="@+id/alternative_a"
-                    android:layout_width="260dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:textSize="20sp"
-                    android:text="Alternativa A"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/custom_buttom"
-                    android:textAllCaps="false">
-
-
-                </Button>
-
-                <Button
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:id="@+id/alternative_b"
-                    android:layout_width="260dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:textSize="20sp"
-                    android:text="Alternativa B"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/custom_buttom"
-                    android:textAllCaps="false">
-
-
-                </Button>
-
-                <Button
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:id="@+id/alternative_c"
-                    android:layout_width="260dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:textSize="20sp"
-                    android:text="Alternativa C"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/custom_buttom"
-                    android:textAllCaps="false">
-
-
-                </Button>
-
-
-            </LinearLayout>
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Como é chamado este componente?"
+                android:textSize="22sp" />
+            <ImageView
+                android:id="@+id/imgPergunta"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_quest_01"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
 
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="470dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="320dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/alternative_a"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_buttom"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Cabo HDMI"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/alternative_b"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_buttom"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Jumper"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/alternative_c"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_buttom"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Fonte 220 volts"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_check"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="135dp"
+                android:layout_marginRight="135dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="btnResponderOnClick"
+                android:background="@drawable/custom_button_check"
+                android:fontFamily="@font/fredoka_one_regular"
+                android:text="Verificar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </Button>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 
 
 
-    <RelativeLayout
-        android:layout_marginTop="60dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"
-                android:src="@color/colorPrimaryDark"/>
-
-            <ImageView
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"
-                android:src="@drawable/back"
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
-
-
-            <Button
-                android:id="@+id/questao_anterior"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"
-                android:background="@drawable/round_button" />
-
-        </RelativeLayout>
-
-
-
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="270dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:src="@color/colorPrimaryDark" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/next" />
-
-
-
-
-            <Button
-                android:id="@+id/proxima_questao"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_gravity="center"
-                android:background="@drawable/round_button" />
-
-        </RelativeLayout>
-
-
-
-
-    </RelativeLayout>
 
 
 

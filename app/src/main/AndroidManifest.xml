@@ -9,9 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConhecendoRoboticaQuiz"></activity>
-        <activity android:name=".ConhecendoARobotica" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Resposta"></activity>
+        <activity
+            android:name=".ConhecendoRoboticaQuiz"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ConhecendoARobotica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
