@@ -46,7 +46,7 @@ public class Resposta extends AppCompatActivity {
                 @Override
                 public void run() {
                     try {
-                        Thread.sleep(3000);
+                        Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -66,8 +66,20 @@ public class Resposta extends AppCompatActivity {
 
         }
 
+
+
     public void btnBackToHomeOnClick(View v){
+
+        Intent intentGet2 = getIntent();
+
         Intent intent = new Intent(this, MainActivity.class);
+
+        int progressQuiz = 100;
+
+        //
+
+        intent.putExtra("progressKnow", intentGet2.getIntExtra("progressknow", 0));
+        intent.putExtra("progressQuiz", progressQuiz);
         startActivity(intent);
         finish();
     }

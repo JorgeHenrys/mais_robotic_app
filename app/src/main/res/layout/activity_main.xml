@@ -54,16 +54,16 @@
                         android:src="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:layout_marginTop="65dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="43dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/search"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
+                        android:src="@drawable/know"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"/>
 
 
                     <ProgressBar
-                        android:id="@+id/progressBar"
+                        android:id="@+id/progressBarKnow"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:indeterminate="false"
@@ -73,7 +73,7 @@
                         android:background="@drawable/circle_shape"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:max="100"
-                        android:progress="50" />
+                        android:progress="0" />
 
                     <Button
                         android:id="@+id/conhecendo_a_robotica"
@@ -161,16 +161,16 @@
                         android:src="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="43dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/placa_robotic"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
+                        android:src="@drawable/quiz"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"/>
 
 
                     <ProgressBar
-                        android:id="@+id/progressBar1"
+                        android:id="@+id/progressBarQuiz"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:indeterminate="false"
@@ -180,7 +180,15 @@
                         android:background="@drawable/circle_shape"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:max="100"
-                        android:progress="50" />
+                        android:progress="0" />
+
+                    <Button
+                        android:id="@+id/quiz_more_robotic"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_button" />
 
                 </RelativeLayout>
 
@@ -193,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="8dp"
-                    android:text="Placa Mais Robotic" />
+                    android:text="Quiz Mais Robotic" />
 
 
             </LinearLayout>
@@ -260,16 +268,16 @@
                         android:src="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="43dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/conection_app"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
+                        android:src="@drawable/tests"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"/>
 
 
                     <ProgressBar
-                        android:id="@+id/progressBar2"
+                        android:id="@+id/progressBarTests"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:indeterminate="false"
@@ -279,107 +287,15 @@
                         android:background="@drawable/circle_shape"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:max="100"
-                        android:progress="60" />
+                        android:progress="0" />
 
-                </RelativeLayout>
-
-
-                <TextView
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:layout_marginTop="5dp"
-                    android:layout_gravity="center"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text="Aplicativo e Conexão com a Placa" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <Button
+                        android:id="@+id/hands_in_work"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="10dp"
                         android:layout_gravity="center"
-                        android:src="@color/colorPrimaryDark"/>
-
-                    <ImageView
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/testes"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
-
-
-                    <ProgressBar
-                        android:id="@+id/progressBar3"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:indeterminate="false"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:progressDrawable="@drawable/circular_progress_bar"
-                        android:background="@drawable/circle_shape"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:max="100"
-                        android:progress="30" />
+                        android:background="@drawable/round_button" />
 
                 </RelativeLayout>
 
@@ -394,7 +310,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="8dp"
-                    android:text="Teste de Funcionamento" />
+                    android:text="Mãos a Obra" />
 
 
             </LinearLayout>
@@ -402,281 +318,283 @@
 
 
 
+            <!--
+
+
+                        <TextView
+                            android:id="@+id/textLevel2"
+                            android:fontFamily="@font/fredoka_one_regular"
+                            android:layout_marginTop="80dp"
+                            android:layout_gravity="center"
+                            android:textSize="22sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nível APrendiz de Cientista" />
 
 
 
-            <TextView
-                android:id="@+id/textLevel2"
-                android:fontFamily="@font/fredoka_one_regular"
-                android:layout_marginTop="80dp"
-                android:layout_gravity="center"
-                android:textSize="22sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nível APrendiz de Cientista" />
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:layout_marginTop="40dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@color/colorPrimaryDark"/>
+
+                                <ImageView
+                                    android:layout_marginTop="65dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/programation"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
+
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:indeterminate="false"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="40dp"
+                                    android:progressDrawable="@drawable/circular_progress_bar"
+                                    android:background="@drawable/circle_shape"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:max="100"
+                                    android:progress="0" />
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:fontFamily="@font/fredoka_one_regular"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="Programação I" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@color/colorPrimaryDark"/>
+
+                                <ImageView
+                                    android:layout_marginTop="35dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/luz"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
+
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar5"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:indeterminate="false"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:progressDrawable="@drawable/circular_progress_bar"
+                                    android:background="@drawable/circle_shape"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:max="100"
+                                    android:progress="30" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:fontFamily="@font/fredoka_one_regular"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="O Que é uma Caixa de Luz" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@color/colorAccent"/>
+
+
+                        </LinearLayout>
 
 
 
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
 
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                            <RelativeLayout
+                                xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
 
-                <RelativeLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@color/colorPrimaryDark"/>
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="40dp"
-                        android:layout_gravity="center"
-                        android:src="@color/colorPrimaryDark"/>
-
-                    <ImageView
-                        android:layout_marginTop="65dp"
-                        android:layout_marginLeft="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/programation"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
-
-
-                    <ProgressBar
-                        android:id="@+id/progressBar4"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:indeterminate="false"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40dp"
-                        android:progressDrawable="@drawable/circular_progress_bar"
-                        android:background="@drawable/circle_shape"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:max="100"
-                        android:progress="0" />
-
-                </RelativeLayout>
+                                <ImageView
+                                    android:layout_marginTop="35dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/haja_luz"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"/>
 
 
-                <TextView
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:layout_marginTop="5dp"
-                    android:layout_gravity="center"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text="Programação I" />
+                                <ProgressBar
+                                    android:id="@+id/progressBar6"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:indeterminate="false"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:progressDrawable="@drawable/circular_progress_bar"
+                                    android:background="@drawable/circle_shape"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:max="100"
+                                    android:progress="30" />
+
+                            </RelativeLayout>
 
 
-            </LinearLayout>
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
+                            <TextView
+                                android:fontFamily="@font/fredoka_one_regular"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="40dp"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text='Projeto "Que Haja Luz" ' />
 
 
-            </LinearLayout>
+                        </LinearLayout>
 
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:src="@color/colorPrimaryDark"/>
-
-                    <ImageView
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/luz"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
-
-
-                    <ProgressBar
-                        android:id="@+id/progressBar5"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:indeterminate="false"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:progressDrawable="@drawable/circular_progress_bar"
-                        android:background="@drawable/circle_shape"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:max="100"
-                        android:progress="30" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:layout_marginTop="5dp"
-                    android:layout_gravity="center"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text="O Que é uma Caixa de Luz" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:src="@color/colorAccent"/>
-
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:src="@color/colorPrimaryDark"/>
-
-                    <ImageView
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/haja_luz"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"/>
-
-
-                    <ProgressBar
-                        android:id="@+id/progressBar6"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:indeterminate="false"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:progressDrawable="@drawable/circular_progress_bar"
-                        android:background="@drawable/circle_shape"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:max="100"
-                        android:progress="30" />
-
-                </RelativeLayout>
-
-
-                <TextView
-                    android:fontFamily="@font/fredoka_one_regular"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="40dp"
-                    android:layout_gravity="center"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text='Projeto "Que Haja Luz" ' />
-
-
-            </LinearLayout>
+                        -->
 
         </LinearLayout>
     </ScrollView>

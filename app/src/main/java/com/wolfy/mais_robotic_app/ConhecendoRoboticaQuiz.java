@@ -22,7 +22,7 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
 
 
     private ProgressBar progressBar;
-    private int progresso = 60;
+    private int progresso = 0;
 
     private TextView textPergunta;
     private ImageView imgPergunta;
@@ -64,7 +64,6 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
         alternativeA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Toast.makeText(ConhecendoRoboticaQuiz.this, "Alternativa A", Toast.LENGTH_SHORT).show();
                 alternativeA.setEnabled(false);
                 alternativeB.setEnabled(true);
                 alternativeC.setEnabled(true);
@@ -76,7 +75,6 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
         alternativeB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Toast.makeText(ConhecendoRoboticaQuiz.this, "Alternativa B", Toast.LENGTH_SHORT).show();
                 alternativeA.setEnabled(true);
                 alternativeB.setEnabled(false);
                 alternativeC.setEnabled(true);
@@ -88,7 +86,6 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
         alternativeC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Toast.makeText(ConhecendoRoboticaQuiz.this, "Alternativa C", Toast.LENGTH_SHORT).show();
                 alternativeA.setEnabled(true);
                 alternativeB.setEnabled(true);
                 alternativeC.setEnabled(false);
@@ -111,11 +108,15 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
 
         if(resposta !=  ""){
 
-            progresso = progresso + 10;
 
-            progressBar.setProgress(progresso);
+
+
 
             Intent intent = new Intent(this, Resposta.class);
+
+            progresso = progresso + 25;
+
+            progressBar.setProgress(progresso);
 
             alternativeA.setEnabled(true);
             alternativeB.setEnabled(true);
@@ -123,6 +124,7 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
 
             if(resposta == respostaCerta) {
                 intent.putExtra("acertou", true);
+
                 resposta = "";
                 pontos ++;
                 intent.putExtra("pontos", pontos);
@@ -133,6 +135,10 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
                 pontos = pontos;
                 intent.putExtra("pontos", pontos);
             }
+
+
+
+            intent.putExtra("progressQuiz", progresso);
 
             startActivity(intent);
         }
@@ -157,7 +163,10 @@ public class ConhecendoRoboticaQuiz extends AppCompatActivity {
         }
 
         else {
+            Intent intentGet = getIntent();
             Intent intent = new Intent(this, Resposta.class);
+
+            intent.putExtra("progressknow", intentGet.getIntExtra("progress_know", 0));
             intent.putExtra("pontos", pontos);
             startActivity(intent);
             finish();

@@ -21,8 +21,9 @@
         android:id="@+id/progress"
         android:layout_gravity="center"
         android:max="100"
-        android:progress="60"/>
-
+        android:progress="0"/>
+<!--sasaadsasdasdadsadad
+    sasddas-->
     <RelativeLayout
         android:layout_marginTop="10dp"
         android:orientation="vertical"
